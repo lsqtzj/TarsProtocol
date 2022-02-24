@@ -178,13 +178,13 @@ module tars
         /**
         * 获取节点负载
         */
-	 	int getNodeLoad(string application, string serverName, int pid, out string fileData);
+        int getNodeLoad(string application, string serverName, int pid, out string fileData);
 
-		/**
-		 * 强制docker登录
-		 */
-		int forceDockerLogin(out vector<string> result);
-     };
+        /**
+        * 强制docker登录
+        */
+        int forceDockerLogin(out vector<string> result);
+    };
 
 };
 
