@@ -348,7 +348,15 @@ module tars
         * @return 0: 成功, <0: 失败
         */
         int undeploy(string application, string serverName, string nodeName, string user,  out string log);
-
+        /**
+         * 批量发布服务
+         *
+         * @param vector<PatchRequest>: 批量发布的请求
+         * @param out result : 结果描述
+         *
+         * @return : 返回值详见tarsErrCode枚举值
+         */
+        int batchPatch(PatchRequest req, out string result);
         /**
          * 更新发布状态
          *
